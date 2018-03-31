@@ -1,0 +1,29 @@
+{
+    "name": "abbotton/easy-topclient",
+    "description": "A simple && practical TopClient SDK based on PHP.",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "pimple/pimple": "^3.0"
+    },
+    "license": "MIT",
+    "support": {
+        "email": "uctoo@foxmail.com",
+        "issues": "https://github.com/Abbotton/easy-topclient/issues"
+    },
+    "authors": [
+        {
+            "name": "Abbotton",
+            "email": "uctoo@foxmail.com",
+            "homepage": "http://abbotton.github.io",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "EasyTopClient\\": "src/"
+        }
+    }
+}
