@@ -161,7 +161,7 @@ class ItemClient extends BaseClient implements IHttpRequestInterface
      */
     public function get()
     {
-        $this->checkRequired(['fields']);
+        $this->checkRequired(['fields', 'q', 'cat']);
         return $this->httpGet('taobao.tbk.item.get');
     }
 }
