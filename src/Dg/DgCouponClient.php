@@ -21,7 +21,7 @@ class DgCouponClient extends BaseClient implements IHttpRequestInterface
      * @param $q
      * @return $this
      */
-    public function setType(string $q)
+    public function setQ(string $q)
     {
         $this->parameters["q"] = $q;
         return $this;
