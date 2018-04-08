@@ -56,9 +56,7 @@ class Application extends Container
     {
         parent::__construct();
 
-        $this['config'] = function () use ($config) {
-            return new Kernel\Config($config);
-        };
+        $this['config'] = $config;
 
         $this->registerProviders();
     }

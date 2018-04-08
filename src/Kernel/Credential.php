@@ -29,7 +29,7 @@ class Credential
     public function token(array $params): string
     {
         ksort($params);
-        $secret = $this->app['config']->get('app_secret');
+        $secret = $this->app['config']['app_secret'];
         $stringToBeSigned = $secret;
         foreach ($params as $k => $v) {
             if (!is_array($v) && "@" != substr($v, 0, 1)) $stringToBeSigned .= "$k$v";

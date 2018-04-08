@@ -52,7 +52,7 @@ class BaseClient
                         'timestamp' => date('Y-m-d H:i:s'),
                         'format' => 'json',
                         'sign_method' => 'md5',
-                        'app_key' => $this->app['config']->get('app_key'),
+                        'app_key' => $this->app['config']['app_key'],
                         'v' => '2.0'
                     ];
                     parse_str($request->getUri()->getQuery(), $parsed);
