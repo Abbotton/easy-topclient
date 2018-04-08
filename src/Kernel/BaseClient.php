@@ -85,7 +85,7 @@ class BaseClient
      */
     public function checkRequired(array $requestParamters){
         foreach ($requestParamters as $paramter) {
-            if (!$this->parameters[$paramter]) throw new \Exception('缺少必须参数`' . $paramter . '`');
+            if (!isset($this->parameters[$paramter]) || !$this->parameters[$paramter]) throw new \Exception('缺少必须参数`' . $paramter . '`');
         }
         return true;
     }
