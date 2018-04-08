@@ -12,8 +12,12 @@ class ServiceProvider implements ServiceProviderInterface
      */
     public function register(Container $app)
     {
-        $app['ju'] = function ($app) {
-            return new JuClient($app);
+        $app['juTqg'] = function ($app) {
+            return new JuTqgClient($app);
+        };
+
+        $app['juSearch'] = function($app) {
+            return new JuSearchClient($app);
         };
     }
 }

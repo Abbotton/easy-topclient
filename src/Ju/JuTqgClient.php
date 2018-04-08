@@ -5,7 +5,7 @@ namespace EasyTopClient\Ju;
 use EasyTopClient\Kernel\BaseClient;
 use EasyTopClient\Kernel\IHttpRequestInterface;
 
-class JuClient extends BaseClient implements IHttpRequestInterface
+class JuTqgClient extends BaseClient implements IHttpRequestInterface
 {
     /**
      * @param $fields

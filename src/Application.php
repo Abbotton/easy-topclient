@@ -21,7 +21,8 @@ use Pimple\Container;
  * @property \EasyTopClient\Uatm\UatmFavoritesItemClient $uatmFavoritesItem
  * @property \EasyTopClient\Tpwd\TpwdClient $tpwd
  * @property \EasyTopClient\Spread\SpreadClient $spread
- * @property \EasyTopClient\Ju\JuClient $ju
+ * @property \EasyTopClient\Ju\JuTqgClient $juTqg
+ * @property \EasyTopClient\Ju\JuSearchClient $juSearch
  * @property \EasyTopClient\Content\ContentClient $content
  * @property \EasyTopClient\Coupon\CouponClient $coupon
  * @property \EasyTopClient\Dg\DgCouponClient $dgCoupon
