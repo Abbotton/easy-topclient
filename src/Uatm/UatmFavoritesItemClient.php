@@ -84,6 +84,6 @@ class UatmFavoritesItemClient extends BaseClient implements IHttpRequestInterfac
     {
         $requestParamters = ['fields', 'favorites_id', 'adzone_id'];
         $this->checkRequired($requestParamters);
-        return $this->httpGet('taobao.tbk.uatm.event.item.get');
+        return $this->httpGet('taobao.tbk.uatm.favorites.item.get');
     }
 }
